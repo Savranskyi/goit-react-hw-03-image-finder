@@ -57,6 +57,7 @@ export class App extends React.Component {
           });
         } else {
           this.setState({ imgArr: value.respArr });
+          this.setState({ page: START_PAGE });
         }
       })
       .catch(err => console.log(err))
